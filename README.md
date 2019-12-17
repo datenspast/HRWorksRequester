@@ -16,7 +16,7 @@ Example:
 ```
 hr = HRWorksRequester()
 target = "GetAllAbsenceTypes"
-payload ='{"onlyAcive":false}'
+payload ='{"onlyActive":false}'
 r=hr.request(target, payload)
 print(r.text)
 ```
