@@ -1,5 +1,5 @@
 # HRWorksRequester
-HR Works Requests with python
+HR Works Requests with python3
 Based on https://www.hrworks.de/public/HRworks_API_Reference.pdf 
 
 ## Preparation
@@ -17,5 +17,6 @@ hr = HRWorksRequester()
 target = "GetAllAbsenceTypes"
 payload ='{"onlyAcive":false}'
 r=hr.request(target, payload)
-```
 print(r.text)
+```
+
