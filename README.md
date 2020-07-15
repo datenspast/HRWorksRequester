@@ -1,7 +1,7 @@
 # HRWorksRequester
 Python3 implementation for HRWorks (HR Works) API requests. 
 
-Based on https://www.hrworks.de/public/HRworks_API_Reference.pdf 
+Based on https://www.hrworks.de/public/HRworks_API_Reference.pdf (v1.0)
 
 ## Preparation
 
