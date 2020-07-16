@@ -61,6 +61,6 @@ class HRWorksRequester():
     
     def request(self, target, payload=""):
         authHead = self.getAuthHeader(target, payload)
-        headers = {"Host": hr.HOST, "Date":hr.getDate(), "Authorization":authHead, 'Accept': 'application/json', "Content-Type":"application/json", "x-hrworks-target":t }
-        r = requests.post('http://' + self.HOST, data = p, headers=headers)
+        headers = {"Host": self.HOST, "Date":self.getDate(), "Authorization":authHead, 'Accept': 'application/json', "Content-Type":"application/json", "x-hrworks-target":target }
+        r = requests.post('http://' + self.HOST, data = payload, headers=headers)
         return r
